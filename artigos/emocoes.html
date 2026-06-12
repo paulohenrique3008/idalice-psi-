@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Meditações do Vivido - Sobre as Emoções | Dra. Idalice Barbosa</title>
+  <meta name="description" content="As emoções são sensações corpóreas. Não devemos temê-las ou controlá-las. Uma reflexão profunda por Dra. Idalice Barbosa.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Specific styles for article page layout */
+    .article-page {
+      padding-top: 140px;
+      padding-bottom: var(--space-2xl);
+    }
+    .article-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-2xl);
+      align-items: start;
+    }
+    @media (min-width: 992px) {
+      .article-container {
+        grid-template-columns: 2.2fr 0.8fr;
+      }
+    }
+    .article-body {
+      background-color: var(--color-bg-primary);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+    }
+    .article-header {
+      margin-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: var(--space-md);
+    }
+    .article-meta {
+      font-size: 0.875rem;
+      color: var(--color-text-light);
+      margin-bottom: var(--space-xs);
+      font-weight: 500;
+    }
+    .article-title {
+      font-size: 2.25rem;
+      color: var(--color-primary);
+      margin-bottom: var(--space-sm);
+      line-height: 1.25;
+    }
+    .article-content {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      color: var(--color-text-medium);
+    }
+    .article-content p {
+      margin-bottom: var(--space-lg);
+    }
+    .article-verse {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-style: italic;
+      color: var(--color-primary-medium);
+      text-align: center;
+      margin: var(--space-lg) 0;
+      line-height: 1.6;
+    }
+    
+    /* Sidebar styles */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xl);
+    }
+    .sidebar-widget {
+      background-color: var(--color-bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+    }
+    .sidebar-widget-title {
+      font-size: 1.25rem;
+      color: var(--color-primary);
+      margin-bottom: var(--space-md);
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 4px;
+      display: inline-block;
+    }
+    .sidebar-profile {
+      text-align: center;
+    }
+    .sidebar-profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: var(--radius-full);
+      object-fit: cover;
+      margin: 0 auto var(--space-sm) auto;
+      box-shadow: var(--shadow-sm);
+      border: 2px solid var(--color-accent);
+    }
+    .sidebar-profile-name {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 2px;
+    }
+    .sidebar-profile-title {
+      font-size: 0.8rem;
+      color: var(--color-accent);
+      font-weight: 600;
+      margin-bottom: var(--space-sm);
+    }
+    .sidebar-profile-desc {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--color-text-medium);
+      margin-bottom: var(--space-md);
+    }
+    .sidebar-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+    .sidebar-list-item a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-text-medium);
+      display: block;
+      line-height: 1.4;
+    }
+    .sidebar-list-item a:hover {
+      color: var(--color-accent);
+    }
+    .sidebar-cta-widget {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-bg-dark) 100%);
+      color: var(--color-text-white);
+      text-align: center;
+    }
+    .sidebar-cta-widget h3 {
+      color: var(--color-text-white);
+      font-size: 1.35rem;
+      margin-bottom: var(--space-sm);
+    }
+    .sidebar-cta-widget p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem;
+      margin-bottom: var(--space-md);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header header-scrolled">
+    <div class="container header-container">
+      <a href="../index.html#top" class="logo-link" aria-label="Voltar à página inicial">
+        <img src="../assets/images/logo.png" alt="Logotipo Dra. Idalice Barbosa" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-title">Idalice Barbosa</span>
+          <span class="logo-subtitle">Psicóloga CRP 11/2043</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Menu principal">
+        <a href="../index.html#top" class="nav-link">Início</a>
+        <a href="../index.html#sobre" class="nav-link">Sobre</a>
+        <a href="../index.html#diferenciais" class="nav-link">Diferenciais</a>
+        <a href="../index.html#como-ajuda" class="nav-link">Como Ajuda</a>
+        <a href="../index.html#servicos" class="nav-link">Serviços</a>
+        <a href="../index.html#depoimentos" class="nav-link">Depoimentos</a>
+        <a href="../index.html#faq" class="nav-link">Dúvidas</a>
+        <a href="../index.html#blog" class="nav-link active">Blog</a>
+        <a href="../index.html#contato" class="nav-link">Contato</a>
+        <a href="#agendar" class="btn btn-accent open-modal-btn">Agendar</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="burger-btn" aria-label="Abrir menu" aria-controls="mobile-navigation" aria-expanded="false">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-nav" id="mobile-navigation" aria-label="Menu mobile">
+      <a href="../index.html#top" class="mobile-nav-link">Início</a>
+      <a href="../index.html#sobre" class="mobile-nav-link">Sobre</a>
+      <a href="../index.html#diferenciais" class="mobile-nav-link">Diferenciais</a>
+      <a href="../index.html#como-ajuda" class="mobile-nav-link">Como Ajuda</a>
+      <a href="../index.html#servicos" class="mobile-nav-link">Serviços</a>
+      <a href="../index.html#depoimentos" class="mobile-nav-link">Depoimentos</a>
+      <a href="../index.html#faq" class="mobile-nav-link">Dúvidas</a>
+      <a href="../index.html#blog" class="mobile-nav-link active">Blog</a>
+      <a href="../index.html#contato" class="mobile-nav-link">Contato</a>
+      <a href="#agendar" class="btn btn-accent open-modal-btn" style="margin-top: var(--space-md);">Agendar Consulta</a>
+    </nav>
+    <div class="mobile-nav-overlay" aria-hidden="true"></div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT - ARTICLE
+       ========================================================================== -->
+  <main class="article-page">
+    <div class="container article-container">
+      <!-- Article Body -->
+      <article class="article-body">
+        <div class="article-header">
+          <div class="article-meta">Publicado em 17 de Maio de 2022 • Meditações do Vivido</div>
+          <h1 class="article-title">Meditações do Vivido - Sobre as Emoções</h1>
+        </div>
+        <div class="article-content">
+          <p>As emoções são sensações corpóreas,</p>
+          <p>Não devemos temê-las, controlá-las ou mesmo ignorá-las.</p>
+          <p>São preciosas informações para serem compreendidas, interpretadas, interpeladas...</p>
+          <div class="article-verse">
+            "E, então, revelar o significado dos sentimentos."
+          </div>
+          <p>Os sentimentos só podem ser plenamente compreendidos se vividos integrando a dualidade:</p>
+          <p>Masculino e Feminino;</p>
+          <p>Concreto e Abstrato;</p>
+          <p>Razão e Emoção...</p>
+          <p>Só podemos amar plenamente quando somos capazes de viver a emoção:</p>
+          <p>Meditando-a. Perscrutando-a. Indagando-a...</p>
+          <p>O sentimento é o que há de mais próprio do Humano.</p>
+          <p>Somos humanos não porque pensamos;</p>
+          <p>E sim, porque sentimos e, por isso, pensamos!</p>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Profile Widget -->
+        <div class="sidebar-widget sidebar-profile">
+          <img src="../assets/images/profile.png" alt="Dra. Idalice Barbosa" class="sidebar-profile-img">
+          <h4 class="sidebar-profile-name">Dra. Idalice Barbosa</h4>
+          <div class="sidebar-profile-title">Psicóloga Clinica</div>
+          <p class="sidebar-profile-desc">PhD em Abordagem de Família com mais de 20 anos de experiência clínica facilitando o autoconhecimento e o equilíbrio emocional.</p>
+          <a href="../index.html#sobre" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1rem; min-height: auto;">Conhecer Trajetória</a>
+        </div>
+
+        <!-- Read More Widget -->
+        <div class="sidebar-widget">
+          <h4 class="sidebar-widget-title">Outras Leituras</h4>
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item"><a href="confianca.html">Meditações do vivido - Sobre a Confiança</a></li>
+            <li class="sidebar-list-item"><a href="coragem.html">Meditações do Vivido - Sobre a Coragem</a></li>
+            <li class="sidebar-list-item"><a href="liberdade.html">Meditações do Vivido - Sobre a Liberdade</a></li>
+            <li class="sidebar-list-item"><a href="poesia.html">Meditações do Vivivo - a poesia no olhar</a></li>
+            <li class="sidebar-list-item"><a href="biodanca.html">Biodança - o fluir na vida!</a></li>
+          </ul>
+        </div>
+
+        <!-- CTA Widget -->
+        <div class="sidebar-widget sidebar-cta-widget">
+          <h3>Agende uma Consulta</h3>
+          <p>Dê o primeiro passo rumo ao autoconhecimento e equilíbrio emocional com atendimento personalizado.</p>
+          <a href="#agendar" class="btn btn-accent open-modal-btn">Agendar Agora</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER (RODAPÉ)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="../assets/images/logo.png" alt="Logo Dra. Idalice Barbosa" class="footer-logo-img">
+          <span class="footer-logo-title">Idalice Barbosa</span>
+        </div>
+        <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-top: 8px;">Acolhimento afetivo e psicoterapia sob a Abordagem Sistêmica das Relações.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-links-title">Links Rápidos</h3>
+        <ul class="footer-links-list">
+          <li><a href="../index.html#sobre" class="footer-link">Sobre Mim</a></li>
+          <li><a href="../index.html#servicos" class="footer-link">Modalidades de Terapia</a></li>
+          <li><a href="../index.html#como-ajuda" class="footer-link">Como a Terapia Ajuda</a></li>
+          <li><a href="../index.html#blog" class="footer-link">Artigos do Blog</a></li>
+          <li><a href="../index.html#faq" class="footer-link">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-links-title">Atendimento</h3>
+        <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-bottom: 8px;">Atendimento presencial em Fortaleza-CE e atendimentos online para todo o Brasil.</p>
+        <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;"><strong>Segunda a Sexta:</strong> 08:00 às 20:00</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Dra. Idalice Barbosa. Todos os direitos reservados. CRP 11/2043.</p>
+      <p>Desenvolvido com excelência técnica e ética.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP BUTTON
+       ========================================================================== -->
+  <a href="https://wa.me/558599381776" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar conosco no WhatsApp">
+    <svg class="whatsapp-float-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.333 4.993L2 22l5.233-1.371a9.936 9.936 0 004.777 1.223h.005c5.505 0 9.99-4.478 9.99-9.984 0-2.669-1.038-5.176-2.924-7.062C17.195 3.018 14.685 2 12.012 2zm5.799 14.186c-.255.72-1.487 1.41-2.037 1.484-.5.068-1.147.126-3.328-.731-2.791-1.099-4.59-3.955-4.73-4.143-.14-.188-1.127-1.499-1.127-2.859 0-1.36.707-2.029.962-2.302.254-.274.554-.342.738-.342.185 0 .37.001.53.009.168.008.397-.033.62.512.228.557.78 1.901.848 2.037.067.137.112.296.022.478-.09.182-.136.296-.272.455-.136.159-.286.356-.408.478-.137.137-.28.285-.12.56.16.274.707 1.164 1.516 1.884.64.57 1.184.945 1.488 1.082.304.137.48.114.661-.09.182-.205.78-.91.988-1.22.208-.31.416-.25.702-.148.286.103 1.815.856 2.127 1.01.312.155.52.229.596.36.076.13.076.755-.179 1.474z"/>
+    </svg>
+  </a>
+
+  <!-- ==========================================================================
+       APPOINTMENT MODAL FORM
+       ========================================================================== -->
+  <div class="modal" id="appointment-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title">Solicitar Agendamento</h3>
+        <button class="modal-close-btn" aria-label="Fechar modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="modal-form">
+          <div class="form-group">
+            <label for="form-name" class="form-label">Seu Nome Completo *</label>
+            <input type="text" id="form-name" class="form-control" required placeholder="Digite seu nome completo">
+          </div>
+          <div class="form-group">
+            <label for="form-phone" class="form-label">Seu Telefone / WhatsApp *</label>
+            <input type="tel" id="form-phone" class="form-control" required placeholder="(85) 99999-9999">
+          </div>
+          <div class="form-group">
+            <label for="form-service" class="form-label">Serviço de Interesse *</label>
+            <select id="form-service" class="form-control" required>
+              <option value="" disabled selected>Selecione um serviço</option>
+              <option value="Terapia particular">Terapia particular (Fortaleza ou Online)</option>
+              <option value="Conflito Familiar em foco">Conflito Familiar em foco</option>
+              <option value="Constelação Familiar">Constelação Familiar</option>
+              <option value="Dúvidas gerais">Outros serviços / Dúvidas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="form-message" class="form-label">Mensagem ou Observação</label>
+            <textarea id="form-message" class="form-control" rows="4" placeholder="Ex: Gostaria de atendimento online no turno da noite..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: var(--space-md);">
+            Enviar Solicitação por WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

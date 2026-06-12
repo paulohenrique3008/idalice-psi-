@@ -1,0 +1,10 @@
+# Nested skill repositories (not part of the site)
+ui-ux-pro-max-skill/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
