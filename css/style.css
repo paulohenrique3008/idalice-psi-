@@ -21,26 +21,26 @@
   --c-primary-container:   #1a365d;
   --c-on-primary:          #ffffff;
   --c-on-secondary:        #ffffff;
-  --c-surface:             #8BAFC0;   /* Slate Blue pastel */
-  --c-surface-low:         #9BBCCC;   /* Lighter Slate Blue pastel */
-  --c-surface-container:   #AECCD9;
-  --c-surface-high:        #c2d9e3;
-  --c-on-surface:          #111c2c;
-  --c-on-surface-variant:  #1b2635;
-  --c-outline:             #5f7285;
-  --c-outline-variant:     #a2b8c9;
+  --c-surface:             #cee6cb;   /* Verde sage claro / Sage Green pastel */
+  --c-surface-low:         #dfefe2;   /* Lighter Sage Green pastel */
+  --c-surface-container:   #b8dcb4;
+  --c-surface-high:        #a6cca2;
+  --c-on-surface:          #002045;
+  --c-on-surface-variant:  #182618;
+  --c-outline:             #4e644e;
+  --c-outline-variant:     #cee6cb;
 
   /* Legacy alias (keeps existing sections working) */
-  --color-bg-primary:      #8BAFC0;   /* Slate Blue pastel (was #ffffff) */
-  --color-bg-secondary:    #9BBCCC;   /* Lighter Slate Blue pastel (was #f0f3ff) */
+  --color-bg-primary:      #cee6cb;   /* Verde sage claro / Sage Green pastel */
+  --color-bg-secondary:    #dfefe2;   /* Lighter Sage Green pastel */
   --color-bg-dark:         #002045;
-  --color-bg-glass:        rgba(244, 247, 249, 0.9); /* High premium glass background */
-  --color-text-dark:       #111c2c;
-  --color-text-medium:     #1b2635;   /* Adjusted for WCAG AAA readability on Slate Blue */
-  --color-text-light:      #304153;   /* Adjusted for WCAG AAA readability on Slate Blue */
+  --color-bg-glass:        rgba(244, 248, 243, 0.9); /* Premium white-sage glass background */
+  --color-text-dark:       #002045;
+  --color-text-medium:     #182618;   /* Adjusted for WCAG AAA readability on Sage Green */
+  --color-text-light:      #374c37;   /* Adjusted for WCAG AAA readability on Sage Green */
   --color-text-white:      #ffffff;
   --color-card-bg:         #ffffff;   /* Keep cards/components white and readable */
-  --border-color:          rgba(0, 32, 69, 0.12); /* Softer outline for cards */
+  --border-color:          rgba(78, 100, 78, 0.15); /* Softer outline matching Sage Green */
   --border-glass:          rgba(0, 32, 69, 0.08);
   --ring-color:            hsla(218, 62%, 25%, 0.15);
 
