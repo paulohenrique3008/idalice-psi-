@@ -21,25 +21,26 @@
   --c-primary-container:   #1a365d;
   --c-on-primary:          #ffffff;
   --c-on-secondary:        #ffffff;
-  --c-surface:             #f9f9ff;
-  --c-surface-low:         #f0f3ff;
-  --c-surface-container:   #e7eeff;
-  --c-surface-high:        #dee8ff;
+  --c-surface:             #8BAFC0;   /* Slate Blue pastel */
+  --c-surface-low:         #9BBCCC;   /* Lighter Slate Blue pastel */
+  --c-surface-container:   #AECCD9;
+  --c-surface-high:        #c2d9e3;
   --c-on-surface:          #111c2c;
-  --c-on-surface-variant:  #43474e;
-  --c-outline:             #74777f;
-  --c-outline-variant:     #c4c6cf;
+  --c-on-surface-variant:  #1b2635;
+  --c-outline:             #5f7285;
+  --c-outline-variant:     #a2b8c9;
 
   /* Legacy alias (keeps existing sections working) */
-  --color-bg-primary:      #ffffff;
-  --color-bg-secondary:    #f0f3ff;
+  --color-bg-primary:      #8BAFC0;   /* Slate Blue pastel (was #ffffff) */
+  --color-bg-secondary:    #9BBCCC;   /* Lighter Slate Blue pastel (was #f0f3ff) */
   --color-bg-dark:         #002045;
-  --color-bg-glass:        rgba(255, 255, 255, 0.85);
+  --color-bg-glass:        rgba(244, 247, 249, 0.9); /* High premium glass background */
   --color-text-dark:       #111c2c;
-  --color-text-medium:     #43474e;
-  --color-text-light:      #74777f;
+  --color-text-medium:     #1b2635;   /* Adjusted for WCAG AAA readability on Slate Blue */
+  --color-text-light:      #304153;   /* Adjusted for WCAG AAA readability on Slate Blue */
   --color-text-white:      #ffffff;
-  --border-color:          #c4c6cf;
+  --color-card-bg:         #ffffff;   /* Keep cards/components white and readable */
+  --border-color:          rgba(0, 32, 69, 0.12); /* Softer outline for cards */
   --border-glass:          rgba(0, 32, 69, 0.08);
   --ring-color:            hsla(218, 62%, 25%, 0.15);
 
@@ -449,7 +450,7 @@ button, input, textarea, select {
   right: -100%;
   width: 280px;
   height: 100vh;
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-card-bg);
   z-index: 1050;
   box-shadow: var(--shadow-xl);
   padding: 100px var(--space-lg) var(--space-xl) var(--space-lg);
@@ -508,7 +509,7 @@ button, input, textarea, select {
   background:
     radial-gradient(circle at 10% 10%, rgba(0, 32, 69, 0.07) 0%, transparent 40%),
     radial-gradient(circle at 90% 90%, rgba(206, 230, 203, 0.45) 0%, transparent 40%),
-    radial-gradient(circle at 50% 50%, #f9f9ff 0%, rgba(231, 238, 255, 0.3) 100%);
+    radial-gradient(circle at 50% 50%, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
   padding-bottom: 64px; /* space for wave */
 }
 
@@ -1146,7 +1147,7 @@ button, input, textarea, select {
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border-color);
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-card-bg);
 }
 
 .services-img {
@@ -1205,7 +1206,7 @@ button, input, textarea, select {
 }
 
 .accordion-item {
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -1331,7 +1332,7 @@ button, input, textarea, select {
 }
 
 .testimonial-card {
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
@@ -1386,7 +1387,7 @@ button, input, textarea, select {
   transform: translateY(-60%);
   width: 48px;
   height: 48px;
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-full);
   display: flex;
@@ -1468,7 +1469,7 @@ button, input, textarea, select {
 }
 /* Google Reviews Style Cards */
 .review-card {
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
@@ -1551,7 +1552,7 @@ button, input, textarea, select {
    ========================================================================== */
 
 .blog-card {
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -1749,7 +1750,7 @@ button, input, textarea, select {
 }
 
 .contact-profile-card {
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
@@ -2015,7 +2016,7 @@ button, input, textarea, select {
 }
 
 .modal-content {
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-card-bg);
   border-radius: var(--radius-lg);
   max-width: 500px;
   width: 100%;
@@ -2077,6 +2078,7 @@ button, input, textarea, select {
 .form-control {
   width: 100%;
   padding: 10px 14px;
+  background-color: var(--color-card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   font-size: 0.95rem;
